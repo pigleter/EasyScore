@@ -1,0 +1,58 @@
+<div>
+  <h2 class="ui header">年级管理</h2>
+</div>
+<div>
+  <app-tool-bar (batchDelClick)="batchDelClick($event)"></app-tool-bar>
+</div>
+<div class="ui divider"></div>
+<div>
+  <table class="ui celled table">
+  <thead>
+  <tr>
+    <th style="width: 30px" *ngIf="isBatchDel">
+      <div class="ui checkbox">
+      <input type="checkbox">
+      <label></label>
+      </div>
+    </th>
+    <th>年级</th>
+    <th>Header</th>
+    <th>Header</th>
+  </tr></thead>
+  <tbody>
+  <tr>
+    <td *ngIf="isBatchDel">
+      <div class="ui checkbox">
+        <input type="checkbox">
+        <label></label>
+      </div>
+    </td>
+    <td>初一</td>
+    <td>Cell</td>
+    <td>Cell</td>
+  </tr>
+  <tr>
+    <td *ngIf="isBatchDel">
+      <div class="ui checkbox">
+        <input type="checkbox">
+        <label></label>
+      </div>
+    </td>
+    <td>初二</td>
+    <td>Cell</td>
+    <td>Cell</td>
+  </tr>
+  <tr>
+    <td *ngIf="isBatchDel">
+      <div class="ui checkbox">
+        <input type="checkbox">
+        <label></label>
+      </div>
+    </td>
+    <td>初三</td>
+    <td>Cell</td>
+    <td>Cell</td>
+  </tr>
+  </tbody>
+</table>
+</div>

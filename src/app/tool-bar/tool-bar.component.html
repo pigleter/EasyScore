@@ -1,0 +1,15 @@
+<div>
+  <button class="ui label icon small button">
+    <i class="plus icon"></i>
+    新建
+  </button>
+  <button *ngIf="!isBatchDel" class="ui label icon small button" (click)="readyBatchDelete()">
+    <i class="remove icon"></i>
+    批量删除
+  </button>
+  <div class="ui mini buttons" *ngIf="isBatchDel">
+    <button class="ui button" (click)="batchDelete()">确定删除</button>
+    <div class="or"></div>
+    <button class="ui button" (click)="batchDeleteCancel()">取消</button>
+  </div>
+</div>

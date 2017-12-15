@@ -10,12 +10,23 @@ import { TestComponent } from './test/test.component';
 import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
 import { MessageComponent } from './message/message.component';
+import { MenuComponent } from './menu/menu.component';
+import { GradeAdminComponent } from './grade-admin/grade-admin.component';
+import { ClassAdminComponent } from './class-admin/class-admin.component';
+import { StudentAdminComponent } from './student-admin/student-admin.component';
+import { ToolBarComponent } from './tool-bar/tool-bar.component';
 
 const routeConfig: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
-  {path: 'home', component: HomeComponent}
-]
+  {path: 'home', component: HomeComponent,
+    children: [
+      {path: 'gradeadmin', component: GradeAdminComponent},
+      {path: 'classadmin', component: ClassAdminComponent},
+      {path: 'studentadmin', component: StudentAdminComponent}
+    ]
+  }
+];
 
 
 @NgModule({
@@ -25,7 +36,12 @@ const routeConfig: Routes = [
     TestComponent,
     HomeComponent,
     BannerComponent,
-    MessageComponent
+    MessageComponent,
+    MenuComponent,
+    GradeAdminComponent,
+    ClassAdminComponent,
+    StudentAdminComponent,
+    ToolBarComponent
   ],
   imports: [
     BrowserModule,
