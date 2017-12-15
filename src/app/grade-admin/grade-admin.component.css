@@ -1,0 +1,3 @@
+.table-head{padding-right:17px;background-color:#999;color:#000;}
+.table-body{width:100%; height:300px;overflow-y:scroll;}
+.table-head table,.table-body table{width:100%;}

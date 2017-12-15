@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
-import { TestComponent } from './test/test.component';
 import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
 import { MessageComponent } from './message/message.component';
@@ -33,7 +32,6 @@ const routeConfig: Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
-    TestComponent,
     HomeComponent,
     BannerComponent,
     MessageComponent,
